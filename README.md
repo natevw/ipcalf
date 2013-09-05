@@ -16,3 +16,8 @@ Or in JavaScripts:
 Or in LISP:
 
     (ok (i dont actually know) lisp)
+
+
+## Bonus
+
+Go to [net.ipcalf.com](http://net.ipcalf.com) in a WebRTC-capable browser to see your local network IP address.
