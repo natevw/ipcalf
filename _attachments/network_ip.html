@@ -19,7 +19,11 @@ if (RTCPeerConnection) (function () {
     };
     
     rtc.onicecandidate = function (evt) {
-        if (evt.candidate) grepSDP(evt.candidate.candidate);
+        // HACK: no longer getting actual SDP from Chrome at least…
+        // TODO: when did this change?
+        // c.f. https://github.com/otalk/sdp-jingle-json/commit/f076c00fbd4e09b368cee17359584adb3167b87c
+        // and maybe https://github.com/w3c/webrtc-pc/commit/700919bc2f35c86b5a72a1677efb50ae0366357d
+        if (evt.candidate) grepSDP("a="+evt.candidate.candidate);
     };
     rtc.createOffer(function (offerDesc) {
         grepSDP(offerDesc.sdp);
