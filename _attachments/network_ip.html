@@ -14,7 +14,7 @@ var RTCPeerConnection = /*window.RTCPeerConnection ||*/ window.webkitRTCPeerConn
 
 if (RTCPeerConnection) (function () {
     var rtc = new RTCPeerConnection({iceServers:[]});
-    if (window.mozRTCPeerConnection) {      // FF needs a channel/stream to proceed
+    if (1 || window.mozRTCPeerConnection) {      // FF [and now Chrome!] needs a channel/stream to proceed
         rtc.createDataChannel('', {reliable:false});
     };
     
