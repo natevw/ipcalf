@@ -25,7 +25,7 @@ Go to [net.ipcalf.com](http://net.ipcalf.com) in a WebRTC-capable browser to see
 
 ## License (MIT)
 
-Copyright (c) 2012–013 Nathan Vander Wilt
+Copyright (c) 2012–2017 Nathan Vander Wilt
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
